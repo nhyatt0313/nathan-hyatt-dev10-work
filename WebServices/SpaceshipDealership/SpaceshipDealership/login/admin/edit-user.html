@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dealership</title>
+        <link href="../../css/bootstrap.css" 
+              rel="stylesheet"/>
+        <link href="../../css/allpages.css"
+              rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <ul class="list-group" id="errorMessages"></ul>
+            <hr /> <!-- break line-->
+            <ul id="navList">
+                <li ><a href="../../home/index.html">Home</a></li>
+                <li ><a href="../../inventory/new.html">New Inventory</a></li>
+                <li ><a href="../../inventory/used.html">Used Inventory</a></li>
+                <li ><a href="../../home/special.html">Specials</a></li>
+                <li ><a href="../../home/contact.html">Contact</a></li>
+                <li ><a href="../sales/make.html">Make</a></li>
+                <li ><a href="../sales/model.html">Model</a></li>
+                <li style='float: right'><a href="../../login/user.html">Sign Out</a></li>
+            </ul>
+            <div id="newUser">
+
+                <hr/>
+
+                <h1>Edit User</h1>
+                <form id="editForm">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="edit-first-name">First Name:</label>
+                            <input type="text" class="form-control" id="edit-first-name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="edit-last-name">Last Name:</label>
+                            <input type="text" class="form-control" id="edit-last-name" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="edit-email">Email:</label>
+                            <input type="text" class="form-control" id="edit-email" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for ="edit-select-role">Role</label>
+                            <select id = "edit-select-role">
+                                <option value = "Sales"> Sales</option>
+                                <option value = "Admin"> Admin</option>
+                                <option value = "Disabled"> Disabled</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="edit-password" class="form-group col-md-12">Password</label>
+                            <input type ="text" class="form-control" id="edit-password">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="edit-c-password" class="form-group col-md-12">Confirm Password</label>
+                            <input type="text" class="form-control inputLength" id="edit-c-password" required>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" id="save" class="btn btn-primary"> Save </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src='../../js/jquery-2.2.4.min.js'></script>
+        <script src='../../js/bootstrap.js'></script>
+        <script src='../../js/edit-user.js'></script>
+    </body>
+</html>

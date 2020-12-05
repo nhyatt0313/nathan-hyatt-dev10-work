@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dealership</title>
+        <link href="../css/bootstrap.css"
+              rel="stylesheet">
+        <link href="../css/allpages.css"
+              rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <ul class="list-group" id="errorMessages"></ul>
+            <hr/> <!-- break line-->
+            <ul  id = "navList">
+                <li ><a href="../home/index.html">Home</a></li>
+                <li ><a href="../inventory/new.html">New Inventory</a></li>
+                <li ><a href="../inventory/used.html">Used Inventory</a></li>
+                <li ><a href="../home/special.html">Specials</a></li>
+                <li ><a href="../home/contact.html">Contact</a></li>
+            </ul>
+            <hr/>
+
+
+
+
+            <div id="admin">
+                <h1 >User Login</h1>
+
+                <div>
+                    <form role="form" id="login-form" 
+                          style="width: 200px; margin-left: auto; margin-right: auto;">
+
+                        <div class="form-row">
+                            <label for="username" >
+                                User Name:
+                            </label>
+                            <input type="text"
+                                   class ="form-control"
+                                   id="username"
+                                   style="width: 200px;"
+                                   placeholder="Enter User Name"
+                                   required/>
+                        </div>
+                        <div class="form-row">
+                            <label for="password">
+                                Password:
+                            </label>
+                            <input type="password"
+                                   class ="form-control"
+                                   id="password"
+                                   style="width: 200px;"
+                                   placeholder="Enter Password"
+                                   required/>
+                        </div>      
+                        <div class="form-group"> 
+
+                            <div class="form-row">
+                                <button type="button" 
+                                        id="login-submit"
+                                        class="btn btn-default" 
+                                        style="margin-top: 5px;">
+                                    Login
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            
+
+        </div>
+
+        <script src="../js/jquery-2.2.4.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/user.js"></script>
+    </body>
+</html>

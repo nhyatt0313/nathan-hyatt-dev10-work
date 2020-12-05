@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dealership</title>
+        <link href="../../css/bootstrap.css" 
+              rel="stylesheet"/>
+        <link href="../../css/allpages.css"
+              rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <ul class="list-group" id="errorMessages"></ul>
+            <hr/>
+            <ul  id = "navList">
+                <li ><a href="../../home/index.html">Home</a></li>
+                <li ><a href="../../inventory/new.html">New Inventory</a></li>
+                <li ><a href="../../inventory/used.html">Used Inventory</a></li>
+                <li ><a href="../../home/special.html">Specials</a></li>
+                <li ><a href="../../home/contact.html">Contact</a></li>
+                <li ><a href="make.html">Make</a></li>
+                <li ><a href="model.html">Model</a></li>
+                <li ><a href="reports.html">Reports</a></li>
+                <li style='float: right'><a href="../../login/user.html">Sign Out</a></li>
+            </ul>
+            <h2>Model</h2>
+            <div id="newModel" style = "border:solid black 2px">
+                <div class="row">
+                    <div id="modelFormDiv">
+                        <form class="form-horizontal" role="form" id="quickSearchForm">
+                            <label for="new-model" class="col-md-2">
+                                New Model
+                            </label>
+                            <input type="text"
+                                   class ="col-md-4"
+                                   id="new-model"
+                                   required/>
+                            <!--<div class="form-group">-->
+                            <div class = "col-md-4">
+                                <div class="form-group">
+                                    <label>Make</label>
+                                    <select id = "select-make">
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button"
+                                        id="save-button"
+                                        class="btn btn-default">
+                                    Save
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id ="modelTableDiv" style="display: none">
+                <table id="modelTable" class="table table-bordered table-hover" >
+                    <tr>
+                        <th width="25%">Make </th>
+                        <th width="25%">Model </th>
+                        <th width="25%">Date Added</th>
+                        <th width="25%">User</th>
+                    </tr>
+
+                    <tbody id="newModelRows"></tbody>
+                </table>
+
+            </div>
+        </div>
+        <script src="../../js/jquery-2.2.4.min.js"></script>
+        <script src="../../js/bootstrap.js"></script>
+        <script src="../../js/model.js"></script>
+    </body>
+</html>

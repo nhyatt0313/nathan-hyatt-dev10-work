@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vending Machine</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css"
+  rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Vending Machine</h1>
+    <hr/>
+    <ul class="list-group" id="errorMessages"></ul>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div id="snackTableDiv">
+          <h2>Snacks</h2>
+          <table id="snackTable" class="table table-hover">
+            <tr>
+              <th width="20%">Id</th>
+              <th width="20%">Snack</th>
+              <th width="20%">Price</th>
+              <th width="20%">Stock</th>
+              <th width="20%"></th>
+            </tr>
+
+            <tbody id="contentRows"></tbody>
+          </table>
+        </div>
+
+
+      </div>
+      <div class="col-md-6">
+
+
+        <form class="form-horizontal"
+        role="form"
+        id="add-money-form">
+
+        <div class="form-group">
+          <h2>Insert Money</h2>
+          <div class="col-md-8">
+            <button type="button" id="dollar-button">Dollar</button>
+            <button type="button" id="quarter-button">Quarter</button>
+            <button type="button" id="dime-button">Dime</button>
+            <button type="button" id="nickel-button">Nickel</button>
+            <button type="button" id="penny-button">Penny</button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="money-total"
+          class="col-md-4 control-label">
+          Money:
+        </label>
+        <div class="col-md-2">
+          <input readonly="true"
+          type="number"
+          class="form-control"
+          id="money-total"
+          value=0.00 />
+        </div>
+      </div>
+      <div class="form-group">
+        <h2>Change</h2>
+
+        <div class="row">
+          <label for="change-dollars"
+          class="col-md-4 control-label">
+          Dollars:
+        </label>
+        <div class="col-md-2">
+          <input type="text"
+          readonly="true"
+          class="form-control"
+          id="change-dollars"
+          value="0" />
+        </div>
+      </div>
+
+      <div class="row">
+        <label for="change-quarters"
+        class="col-md-4 control-label">
+        Quarters:
+      </label>
+      <div class="col-md-2">
+        <input type="text"
+        readonly="true"
+        class="form-control"
+        id="change-quarters"
+        value="0" />
+      </div>
+    </div>
+
+    <div class="row">
+      <label for="change-dimes"
+      class="col-md-4 control-label">
+      Dimes:
+    </label>
+    <div class="col-md-2">
+      <input type="text"
+      readonly="true"
+      class="form-control"
+      id="change-dimes"
+      value="0" />
+    </div>
+  </div>
+
+  <div class="row">
+    <label for="change-nickels"
+    class="col-md-4 control-label">
+    Nickels:
+  </label>
+  <div class="col-md-2">
+    <input type="text"
+    readonly="true"
+    class="form-control"
+    id="change-nickels"
+    value="0" />
+  </div>
+</div>
+
+<div class="row">
+  <label for="change-pennies"
+  class="col-md-4 control-label">
+  Pennies:
+</label>
+<div class="col-md-2">
+  <input type="text"
+  readonly="true"
+  class="form-control"
+  id="change-pennies"
+  value="0" />
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/VendingMachine.js"></script>
+</body>
+</html>

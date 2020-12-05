@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS AGoodVendingMachineTest;
+CREATE DATABASE AGoodVendingMachineTest;
+
+USE AGoodVendingMachineTest;
+
+CREATE TABLE Item (
+    ID INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	title CHAR(25) NOT NULL,
+	price DECIMAL(10,2) NOT NULL,
+	inventory INT NOT NULL
+);

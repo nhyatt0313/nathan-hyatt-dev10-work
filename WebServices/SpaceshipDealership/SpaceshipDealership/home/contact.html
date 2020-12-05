@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dealership</title>
+        <link href="../css/bootstrap.css"
+              rel="stylesheet">
+        <link href="../css/allpages.css"
+              rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <ul class="list-group" id="errorMessages"></ul>
+            <hr/>
+            <ul  id = "navList">
+                <li ><a href="../home/index.html">Home</a></li>
+                <li ><a href="../inventory/new.html">New Inventory</a></li>
+                <li ><a href="../inventory/used.html">Used Inventory</a></li>
+                <li ><a href="../home/special.html">Specials</a></li>
+                <li ><a href="../home/contact.html">Contact</a></li>
+                <li style='float: right'><a href="../login/user.html">Login</a></li>
+            </ul>
+
+
+            <hr/>
+            <h1>Contact Us</h1>
+
+            <div id="contact" class="col-lg-6 col-md-6" style=" background-color: #A5BFC4">
+                <form id="newContactForm" style="padding: 20px;">
+                    
+                    <div style="width: 232px; text-align: right">
+                        <label for="name" style="padding-bottom: 20px">Name:</label>
+                        <input type="text" id="name" value="" required><br/>
+                        <label for="phone" style="padding-bottom: 20px">Phone:</label>
+                        <input type="tel" id="phone" value="" required><br/>
+                        <label for="email" style="padding-bottom: 20px">Email:</label>
+                        <input type="email" id="email" value="" required><br/>
+                    </div>
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea><br/>
+                    <button type="button" onClick="sendContactForm()">Submit</button>
+                </form>
+            </div>
+
+            <div id="mapLocation">
+                <div class="col-lg-6 col-md-6">
+                    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d214086.1472085812!2d-97.01486382381187!3d33.027599880606516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2f9d551bf54f%3A0x745d1026682fb422!2sQuikTrip!5e0!3m2!1sen!2sus!4v1547280696658" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    -->
+                    <h4>123 Address St</h4>
+                    <h4>City, ST 12345</h4>
+                    <br/>
+                    <h4>Sales: 123-456-7890</h4>
+                    <h4>Service: 012-345-6789</h4>
+                </div>
+            </div>
+
+        </div>
+        <script src="../js/jquery-2.2.4.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/contact.js"></script>
+
+
+    </body>
+</html>

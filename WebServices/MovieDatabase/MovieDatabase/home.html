@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie Database</title>
+        <link href="css/bootstrap.css"
+              rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Movie Database</h1>
+            <hr/>
+            <ul class="list-group"
+				id="errorMessages"></ul>
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <div id="movieTableDiv">
+                        <h2>Movies</h2>
+
+                        <table id="movieTable"
+							class="table table-hover">
+                            <tr>
+                                <th width="10%">Id</th>
+                                <th width="30%">Movie</th>
+                                <th width="20%"></th>
+                                <th width="20%"></th>
+								<th width="20%"></th>
+                            </tr>
+                            <tbody id="contentRows"></tbody>
+                        </table>
+
+                    </div>
+
+					<div id="viewMovieDiv"
+						style="display: none">
+
+						<table id="viewTable"
+							class="table table-hover">
+
+							<tr>
+								<th width="50%">Title:</th>
+								<th width="50%" id="view-title"></th>
+							</tr>
+							<tr>
+								<th width="50%">Release Date:</th>
+								<th width="50%" id="view-release-date"></th>
+							</tr>
+							<tr>
+								<th width="50%">Mpaa Rating:</th>
+								<th width="50%" id="view-mpaa-rating"></th>
+							</tr>
+							<tr>
+								<th width="50%">Director Name:</th>
+								<th width="50%" id="view-director-name"></th>
+							</tr>
+							<tr>
+								<th width="50%">Studio:</th>
+								<th width="50%" id="view-studio"></th>
+							</tr>
+							<tr>
+								<th width="50%">User Rating:</th>
+								<th width="50%" id="view-user-rating"></th>
+							</tr>
+
+						</table>
+
+            <div class="form-group">
+                <div class="form-group"
+                    style="display: none">
+                    <div class="col-md-8">
+                      <input type="text"
+                      class="form-control"
+                      id="delete-movie-id" required/>
+                  </div>
+                </div>
+                  <div class="col-md-4">
+                        <input type="hidden" id="edit-movie-id">
+                        <button type="button"
+                              id="cancel-view-button"
+                              class="btn btn-default"
+                              onclick="hideViewDeleteForm()">
+                              Cancel
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button"
+                                id="delete-button"
+                                style="display: none"
+                                class="btn btn-default">
+                                Delete Movie
+                        </button>
+                    </div>
+            </div>
+					</div>
+
+					<div id="editMovieDiv"
+						style="display: none">
+						<h2>Edit Movie</h2>
+
+						<form class="form-horizontal"
+							role="form"
+							id="edit-form">
+
+
+              <div class="form-group"
+                  style="display: none">
+								<div class="col-md-8">
+									<input type="text"
+										class="form-control"
+										id="edit-movie-id" required/>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="edit-title"
+									class="col-md-4 control-label">
+									Title:
+								</label>
+								<div class="col-md-8">
+									<input type="text"
+										class="form-control"
+										id="edit-title" required/>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="edit-release-date"
+									class="col-md-4 control-label">
+									Release Date:
+								</label>
+								<div class="col-md-8">
+									<input type="text"
+										class="form-control"
+										id="edit-release-date" required/>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="edit-mpaa-rating"
+									class="col-md-4 control-label">
+									Mpaa Rating:
+								</label>
+								<div class="col-md-8">
+									<input type="text"
+										class="form-control"
+										id="edit-mpaa-rating" required/>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="edit-director-name"
+									class="col-md-4 control-label">
+									Director Name:
+								</label>
+								<div class="col-md-8">
+									<input type="text"
+										class="form-control"
+										id="edit-director-name" required/>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="edit-studio"
+									class="col-md-4 control-label">
+									Studio:
+								</label>
+								<div class="col-md-8">
+									<input type="text"
+										class="form-control"
+										id="edit-studio" required/>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="edit-user-rating"
+									class="col-md-4 control-label">
+									User Rating:
+								</label>
+								<div class="col-md-8">
+									<input type="text"
+										class="form-control"
+										id="edit-user-rating" required/>
+								</div>
+							</div>
+
+							<div class="form-group">
+                    <div class="col-md-offset-4 col-md-4">
+                          <input type="hidden" id="edit-movie-id">
+                          <button type="button"
+                                id="edit-cancel-button"
+                                class="btn btn-default"
+                                onclick="hideEditForm()">
+                                Cancel
+                          </button>
+                      </div>
+                      <div class="col-md-4">
+                          <button type="button"
+                                  id="edit-button"
+                                  class="btn btn-default">
+                                  Update Movie
+                          </button>
+                      </div>
+              </div>
+
+
+						</form>
+        </div>
+	</div>
+
+				<div class="col-md-6">
+					<h2>Add Movie</h2>
+
+					<form class="form-horizontal"
+							role="form"
+							id="add-form">
+
+							<div class="form-group">
+								<label for="add-title"
+									class="col-md-4 control-label">
+									Title:
+								</label>
+								<div class="col-md-8">
+									<input type="text"
+										class="form-control"
+										id="add-title"
+										placeholder="Title" required/>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="add-release-date"
+									class="col-md-4 control-label">
+									Release Date:
+								</label>
+								<div class="col-md-8">
+									<input type="text"
+										class="form-control"
+										id="add-release-date"
+										placeholder="Release Date" required/>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="add-mpaa-rating"
+									class="col-md-4 control-label">
+									Mpaa Rating:
+								</label>
+								<div class="col-md-8">
+									<input type="text"
+										class="form-control"
+										id="add-mpaa-rating"
+										placeholder="Mpaa Rating" required/>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="add-director-name"
+									class="col-md-4 control-label">
+									Director Name:
+								</label>
+								<div class="col-md-8">
+									<input type="text"
+										class="form-control"
+										id="add-director-name"
+										placeholder="Director Name" required/>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="add-studio"
+									class="col-md-4 control-label">
+									Studio:
+								</label>
+								<div class="col-md-8">
+									<input type="text"
+										class="form-control"
+										id="add-studio"
+										placeholder="Studio" required/>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="add-user-rating"
+									class="col-md-4 control-label">
+									User Rating:
+								</label>
+								<div class="col-md-8">
+									<input type="text"
+										class="form-control"
+										id="add-user-rating"
+										placeholder="User Rating" required/>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-offset-4 col-md-8">
+									<button type="button"
+                                        id="add-button"
+                                        class="btn btn-default">
+                                    Add Movie
+                                </button>
+                            </div>
+
+						</form>
+
+
+				</div>
+
+			</div>
+        </div>
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/MovieDatabase.js"></script>
+    </body>
+</html>

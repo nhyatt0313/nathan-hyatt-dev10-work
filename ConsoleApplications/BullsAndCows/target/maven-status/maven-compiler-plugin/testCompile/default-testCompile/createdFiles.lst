@@ -1,0 +1,4 @@
+com\mycompany\bullsandcows\service\RoundServiceImplTest.class
+com\mycompany\bullsandcows\service\GameServiceImplTest.class
+com\mycompany\bullsandcows\dao\RoundDatabaseDaoImplTest.class
+com\mycompany\bullsandcows\dao\GameDatabaseDaoImplTest.class

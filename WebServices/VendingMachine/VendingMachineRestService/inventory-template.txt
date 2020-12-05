@@ -1,0 +1,9 @@
+A1::snickers        ::1.25::23
+A2::kit-kat         ::1.25::12
+A3::pay-day         ::1.00::14
+B1::peanuts         ::0.99::50
+B2::cashews         ::1.50::21
+B3::almonds         ::1.50::13
+C1::baked-potato    ::2.00::5
+C2::baked-beans     ::0.89::0
+C3::turkey          ::29.99::1

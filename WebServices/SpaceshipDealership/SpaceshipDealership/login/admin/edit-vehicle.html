@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dealership</title>
+        <link href="../../css/bootstrap.css"
+              rel="stylesheet">
+        <link href="../../css/allpages.css"
+              rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <ul class="list-group" id="errorMessages"></ul>
+            <hr/> <!-- break line-->
+            <ul  id = "navList">
+                <li ><a href="../../home/index.html">Home</a></li>
+                <li ><a href="../../inventory/new.html">New Inventory</a></li>
+                <li ><a href="../../inventory/used.html">Used Inventory</a></li>
+                <li ><a href="../../home/special.html">Specials</a></li>
+                <li ><a href="../../home/contact.html">Contact</a></li>
+                <li ><a href="../sales/make.html">Make</a></li>
+                <li ><a href="../sales/model.html">Model</a></li>
+                <li style='float: right'><a href="../../login/user.html">Sign Out</a></li>
+            </ul>
+            <hr/>
+
+            <h1>Admin</h1>
+            <hr/>
+            <h2>Edit Vehicle</h2>
+
+            <div id="detailsVehicle" >
+                <div id="detailResults"> </div>
+
+                <form id="editForm">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="make">Make:</label>
+                            <input type="text" class="form-control inputLength" id="make" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="model">Model:</label>
+                            <input type="text" class="form-control inputLength" id="model" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="type">New?</label>
+                            <input type="text" class="form-control inputLength" id="type" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="style">Body Style</label>
+                            <input type="text" class="form-control inputLength" id="style" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="year">Year</label>
+                            <input type="number" class="form-control inputLength" id="year" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Transmission</label>
+                            <select id = "transmission">
+                                <option  value = "Automatic">Automatic</option>
+                                <option value = "Manual">Manual</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Color</label>
+                            <select id = "exterior">
+                                <option selected = "selected" value = "red">red</option>
+                                <option value = "blue">blue</option>
+                                <option value = "green">green</option>
+                                <option value = "silver">silver</option>
+                                <option value = "black">black</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>Interior</label>
+                            <select id = "interior">
+                                <option selected = "selected" value = "red">red</option>
+                                <option value = "blue">blue</option>
+                                <option value = "green">green</option>
+                                <option value = "silver">silver</option>
+                                <option value = "black">black</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="mileage">Milage</label>
+                            <input type="number" class="form-control inputLength" id="mileage" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="vin">VIN #</label>
+                            <input type="text" class="form-control inputLength" id="vin" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label  for="msrp">MSRP</label>
+                            <input type="number" step="0.01" min="0" class="form-control inputLength" id="msrp" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="salesPrice">Sales Price</label>
+                            <input type="number" step="0.01" min="0" class="form-control inputLength" id="salesPrice" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="description" class="form-group col-md-12">Description</label>
+                        <textarea class="form-control" id="description" rows="3"></textarea>
+                    </div>
+
+                    <div id="carImage"> </div>
+
+                    <input id="upload" type="file" />
+                    <input id="filename" type="text" />
+                    <div class="form-row">
+                        <input type="checkbox" id="isFeatured" value="true">Feature this vehicle<br>
+                    </div>
+
+
+                    <div align="middle" style="padding-bottom: 10px" id="deleteAndSave">
+                    </div>
+
+                </form>
+            </div>
+
+
+        </div>
+
+        <script src="../../js/jquery-2.2.4.min.js"></script>
+        <script src="../../js/bootstrap.js"></script>
+        <script src="../../js/edit-vehicle.js"></script>
+    </body>
+</html>

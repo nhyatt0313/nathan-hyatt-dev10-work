@@ -1,0 +1,8 @@
+
+2018-11-13T12:54:42.483 : Student 3 created.
+2018-11-13T13:11:49.813 : Student 2 created.
+2018-11-13T13:22:28.459 : Student 4 created.
+2018-11-20T14:04:34.652 : addStudent: 0001Id: 0001 | Name: joe smith | Cohort: job
+2018-11-20T14:05:31.049 : addStudent: 0002Id: 0002 | Name: billy joe | Cohort: yep
+2018-11-20T14:06:17.248 : removeStudent: 0002
+2018-11-20T14:10:56.220 : addStudent: 0002Id: 0002 | Name: sally jones | Cohort: school

@@ -1,0 +1,15 @@
+com\mycompany\moviedatabase\TestApplicationConfiguration.class
+com\mycompany\moviedatabase\dao\MovieDatabaseDaoSqlImpl$1.class
+com\mycompany\moviedatabase\controller\MovieDatabaseRestController.class
+com\mycompany\moviedatabase\dao\MovieDatabaseAuditDao.class
+com\mycompany\moviedatabase\dto\Movie.class
+com\mycompany\moviedatabase\ui\MovieDatabaseView.class
+com\mycompany\moviedatabase\ui\UserIOImpl.class
+com\mycompany\moviedatabase\dao\MovieDatabaseDaoSqlImpl.class
+com\mycompany\moviedatabase\dao\MovieDatabaseDao.class
+com\mycompany\moviedatabase\service\MovieDatabaseService.class
+com\mycompany\moviedatabase\ui\UserIO.class
+com\mycompany\moviedatabase\service\MovieDatabaseServiceImpl.class
+com\mycompany\moviedatabase\advice\LoggingAdvice.class
+com\mycompany\moviedatabase\dao\MovieDatabaseDaoSqlImpl$MovieMapper.class
+com\mycompany\moviedatabase\App.class

@@ -1,0 +1,39 @@
+DROP DATABASE IF EXISTS Game;
+
+CREATE DATABASE IF NOT EXISTS Game;
+USE Game;
+
+CREATE TABLE IF NOT EXISTS `Player` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  `health` INT NOT NULL,
+  `level` INT NOT NULL,
+  `xp` INT NOT NULL,
+  PRIMARY KEY (`id`));
+  
+CREATE TABLE IF NOT EXISTS `Enemy` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `type` VARCHAR(45) NOT NULL,
+  `health` INT NOT NULL,
+  `level` INT NOT NULL,
+  `xp` INT NOT NULL,
+  PRIMARY KEY (`id`));
+  
+CREATE TABLE IF NOT EXISTS `Item` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(100) NOT NULL,
+    `role` VARCHAR(45) NOT NULL,
+    PRIMARY KEY (`id`));
+    
+CREATE TABLE IF NOT EXISTS `Weapon` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(100) NOT NULL,
+    `type` VARCHAR(45) NOT NULL,
+    `range` INT NOT NULL,
+    `damage` INT NOT NULL,
+    PRIMARY KEY (`id`));
+    
+
+    

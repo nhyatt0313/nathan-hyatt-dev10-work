@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dealership</title>
+        <link href="../../css/bootstrap.css"
+              rel="stylesheet">
+        <link href="../../css/allpages.css"
+              rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <ul class="list-group" id="errorMessages"></ul>
+            <hr/>
+            <ul  id = "navList">
+                <li ><a href="../../home/index.html">Home</a></li>
+                <li ><a href="../../inventory/new.html">New Inventory</a></li>
+                <li ><a href="../../inventory/used.html">Used Inventory</a></li>
+                <li ><a href="../../home/special.html">Specials</a></li>
+                <li ><a href="../../home/contact.html">Contact</a></li>
+                <li ><a href="make.html">Make</a></li>
+                <li ><a href="model.html">Model</a></li>
+                <li ><a href="reports.html">Reports</a></li>
+                <li style='float: right'><a href="../user.html">Sign Out</a></li>
+            </ul>
+            <hr/>
+            <h1>Sales Reports</h1>
+            
+            <div id= "sales" style = "border-style:solid ; padding-bottom:10px; padding-left:5px; padding-right:5px; padding-top:10px">
+                <div id="searchFormDiv">
+                    <form id="quickSearchForm">
+                        <div class="row">
+                            <h4>Filters</h4>
+                            <div class="col-sm-4">
+                                <label>User</label>
+                                <div class="form-group" id="user-selection-div">
+                                    <select id="userIdSelect" class="form-control">
+                                        <option value="0" disabled selected>-All-</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label>From Date</label>
+                                <input class="form-control date-format" type="text" placeholder="YYYY-MM-DD" aria-label="From Date" id="startDate">
+                            </div>
+                            <div class = "col-md-4">
+                                <label>To Date</label>
+                                <input class="form-control date-format" type="text" placeholder="YYYY-MM-DD" aria-label="To Date" id="endDate">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <br/>
+                            <br/>
+                            <br/>
+                            <button type="button"
+                                    id="search-button">
+                                Search
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <h3>Search Results</h3>
+            <div id ="searchResults">
+                <table id="modelTable" class="table table-bordered table-hover" style='width: 100%'>
+                    <tr>
+                        <th>User</th>
+                        <th>Total Sales</th>
+                        <th>Total Vehicles</th>
+                    </tr>
+                    <tbody id="newRows"></tbody>
+                </table>
+            </div>
+
+            <hr/>
+
+
+
+        </div>
+
+        <script src="../../js/jquery-2.2.4.min.js"></script>
+        <script src="../../js/bootstrap.js"></script>
+        <script src="../../js/sales-report.js"></script>
+    </body>
+</html>

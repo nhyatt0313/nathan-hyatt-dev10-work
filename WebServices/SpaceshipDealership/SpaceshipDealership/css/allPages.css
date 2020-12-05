@@ -1,0 +1,68 @@
+body {
+    background-color: snow;
+}
+
+#searchFormDiv {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #A5BFC4;
+}
+
+#navList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+
+}
+
+#navList li a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navList li a:hover:not(.active) {
+    background-color: #111;
+}
+
+#navList .active {
+    background-color: #navList {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    li {
+
+    }
+
+    #navList li a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    #navList li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    #navList .active {
+        background-color: #0C3346;
+    }
+    
+    
+}

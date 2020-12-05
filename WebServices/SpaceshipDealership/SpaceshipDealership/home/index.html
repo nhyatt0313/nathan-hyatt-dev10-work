@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dealership</title>
+        <link href="../css/bootstrap.css"
+              rel="stylesheet">
+        <link href="../css/allpages.css"
+              rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <ul class="list-group" id="errorMessages"></ul>
+            <hr/> <!-- break line-->
+            <ul  id = "navList">
+                <li ><a href="../home/index.html">Home</a></li>
+                <li ><a href="../inventory/new.html">New Inventory</a></li>
+                <li ><a href="../inventory/used.html">Used Inventory</a></li>
+                <li ><a href="../home/special.html">Specials</a></li>
+                <li ><a href="../home/contact.html">Contact</a></li>
+                <li style='float: right'><a href="../login/user.html">Login</a></li>
+            </ul>
+            <hr/>
+            
+            <div class="row" style="padding-bottom: 20px; margin-left: 5px; margin-right: 5px;">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                
+                <ol class="carousel-indicators"></ol>
+				
+                <div class="carousel-inner"></div>
+				
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
+            </div>
+            
+            <hr/>
+            
+            <h3>Featured Vehicles</h3>
+            
+            <div class="card-deck"></div>
+        </div>
+        
+        <script src="../js/jquery-2.2.4.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/index.js"></script>
+    </body>
+</html>

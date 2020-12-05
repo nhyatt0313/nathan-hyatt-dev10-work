@@ -1,0 +1,56 @@
+cd C:\Repos\nathan-hyatt-individual-work\InterestCalculator; "JAVA_HOME=C:\\Program Files\\Java\\jdk1.8.0_141" cmd /c "\"\"C:\\Program Files\\NetBeans 8.2\\java\\maven\\bin\\mvn.bat\" -Dexec.args=\"-classpath %classpath com.mycompany.interestcalculator.App\" -Dexec.executable=\"C:\\Program Files\\Java\\jdk1.8.0_141\\bin\\java.exe\" -Dmaven.ext.class.path=\"C:\\Program Files\\NetBeans 8.2\\java\\maven-nblib\\netbeans-eventspy.jar\" -Dfile.encoding=UTF-8 org.codehaus.mojo:exec-maven-plugin:1.2.1:exec\""
+Running NetBeans Compile On Save execution. Phase execution is skipped and output directories of dependency projects (with Compile on Save turned on) will be used instead of their jar artifacts.
+Scanning for projects...
+                                                                        
+------------------------------------------------------------------------
+Building InterestCalculator 1.0-SNAPSHOT
+------------------------------------------------------------------------
+
+--- exec-maven-plugin:1.2.1:exec (default-cli) @ InterestCalculator ---
+What is the annual interest rate? 
+12.3
+What is the initial amount of principal? 
+2000
+what is the number of years? 
+4
+Do you want quarterly, monthly, or daily interest compound periods? (4, 12, 365)
+12
+Interest rate: 12.3
+Initial balance: 2000.0
+Number of years left: 3.0
+Compound period: 12
+Quarterly interest rate: 1.0250000000000001
+
+Current balance: 2260.353190999744
+
+Interest rate: 12.3
+Initial balance: 2260.353190999744
+Number of years left: 2.0
+Compound period: 12
+Quarterly interest rate: 1.0250000000000001
+
+Current balance: 2554.598274031363
+
+Interest rate: 12.3
+Initial balance: 2554.598274031363
+Number of years left: 1.0
+Compound period: 12
+Quarterly interest rate: 1.0250000000000001
+
+Current balance: 2887.1471802146143
+
+Interest rate: 12.3
+Initial balance: 2887.1471802146143
+Number of years left: 0.0
+Compound period: 12
+Quarterly interest rate: 1.0250000000000001
+
+Current balance: 3262.9861708420085
+
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time: 27.553s
+Finished at: Thu Nov 15 09:32:58 CST 2018
+Final Memory: 5M/123M
+------------------------------------------------------------------------

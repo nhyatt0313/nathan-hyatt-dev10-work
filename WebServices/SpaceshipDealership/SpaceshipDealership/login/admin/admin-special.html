@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dealership</title>
+        <link href="../../css/bootstrap.css"
+              rel="stylesheet">
+        <link href="../../css/allpages.css"
+              rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <ul class="list-group" id="errorMessages"></ul>
+            <hr/> <!-- break line-->
+            <ul  id = "navList">
+                <li ><a href="../../home/index.html">Home</a></li>
+                <li ><a href="../../inventory/new.html">New Inventory</a></li>
+                <li ><a href="../../inventory/used.html">Used Inventory</a></li>
+                <li ><a href="../../home/special.html">Specials</a></li>
+                <li ><a href="../../home/contact.html">Contact</a></li>
+                <li ><a href="../sales/make.html">Make</a></li>
+                <li ><a href="../sales/model.html">Model</a></li>
+                <li style='float: right'><a href="../../login/user.html">Sign Out</a></li>
+            </ul>
+            <hr/>
+            <h1>Admin</h1>
+            <hr/>
+            <h2>Specials</h2>
+
+            <div id="newSpecial">
+                <form>
+                    <label for="title">Title:</label>
+                    <input id="title" type="text" />
+
+                    <label for="description">Description:</label>
+                    <textarea id="description" ></textarea>
+                </form>
+                <button id="addButton" type="button">Create</button>
+            </div>
+
+            <div id="special"></div>
+        </div>
+
+
+
+
+        <script src="../../js/jquery-2.2.4.min.js"></script>
+        <script src="../../js/bootstrap.js"></script>
+        <script src="../../js/admin-special.js"></script>
+    </body>
+</html>

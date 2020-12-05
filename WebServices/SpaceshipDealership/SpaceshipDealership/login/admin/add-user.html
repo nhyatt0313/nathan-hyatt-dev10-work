@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dealership</title>
+        <link href="../../css/bootstrap.css" 
+              rel="stylesheet"/>
+        <link href="../../css/allpages.css"
+              rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <ul class="list-group" id="errorMessages"></ul>
+            <hr /> <!-- break line-->
+            <ul id="navList">
+                <li ><a href="../../home/index.html">Home</a></li>
+                <li ><a href="../../inventory/new.html">New Inventory</a></li>
+                <li ><a href="../../inventory/used.html">Used Inventory</a></li>
+                <li ><a href="../../home/special.html">Specials</a></li>
+                <li ><a href="../../home/contact.html">Contact</a></li>
+                <li ><a href="../sales/make.html">Make</a></li>
+                <li ><a href="../sales/model.html">Model</a></li>
+                <li style='float: right'><a href="../../login/user.html">Sign Out</a></li>
+            </ul>
+            <div id="newUser">
+                
+                <hr/>
+                
+                <h1>Add User</h1>
+                <form>
+                    <div class="form-group col-md-6">
+                        <label for="firstName">First Name: </label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lastName">Last Name: </label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email: </label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for ="select-role">Role</label>
+                        <select id = "select-role">
+                            <option value = 1>Sales</option>
+                            <option value = 2>Admin</option>
+                            <option value = 3>Disabled</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="password">Password: </label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="passwordRe">Confirm Password: </label>
+                        <input type="password" class="form-control" id="passwordRe">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="addUser">Save</button>
+                </form>
+            </div>
+        </div>
+        <script src='../../js/jquery-2.2.4.min.js'></script>
+        <script src='../../js/bootstrap.js'></script>
+        <script src='../../js/add-user.js'></script>
+    </body>
+</html>

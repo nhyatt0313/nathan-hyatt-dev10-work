@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dealership</title>
+        <link href="../../css/bootstrap.css"
+              rel="stylesheet">
+        <link href="../../css/allpages.css"
+              rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <ul class="list-group" id="errorMessages"></ul>
+            <hr/>
+            <ul  id = "navList">
+                <li ><a href="../../home/index.html">Home</a></li>
+                <li ><a href="../../inventory/new.html">New Inventory</a></li>
+                <li ><a href="../../inventory/used.html">Used Inventory</a></li>
+                <li ><a href="../../home/special.html">Specials</a></li>
+                <li ><a href="../../home/contact.html">Contact</a></li>
+                <li ><a href="make.html">Make</a></li>
+                <li ><a href="model.html">Model</a></li>
+                <li ><a href="reports.html">Reports</a></li>
+                <li style='float: right'><a href="../user.html">Sign Out</a></li>
+            </ul>
+            <hr/>
+            <h1>Inventory Report</h1>
+
+            <hr/>
+            
+            <h3>New</h3>
+            <table  class="table-bordered table-hover" style='width: 100%'>
+                <tr>
+                    <th>Year</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Count</th>
+                    <th>Stock Value</th>
+                </tr>
+                <tbody id="inventory-new-report"></tbody>
+            </table>
+            
+            <h3>Used</h3>
+            <table  class="table-bordered table-hover" style='width: 100%'>
+                <tr>
+                    <th>Year</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Count</th>
+                    <th>Stock Value</th>
+                </tr>
+                <tbody id="inventory-used-report"></tbody>
+            </table>
+
+
+
+        </div>
+
+        <script src="../../js/jquery-2.2.4.min.js"></script>
+        <script src="../../js/bootstrap.js"></script>
+        <script src="../../js/inventory-report.js"></script>
+    </body>
+</html>
